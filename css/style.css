@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('../fonts/ubuntu-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('../fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('../fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:hover{
+    color: #f1f1f7;
+}
+body{
+    font-family: 'ubunturegular';
+    background-color: #f2f0f2;
+}
+
+header{
+    height: 40px;
+    background-color: #282829;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+    
+}
+header div.container{
+    display: flex;
+}
+header div.logo{
+    display: inline;
+}
+header div.logo a{
+    
+}
+header div.logo a img{
+    width: 20px;
+    filter: invert(1);
+    margin-right: 50px;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    
+}
+header ul li{
+    margin-right: 50px;
+}
+header ul li:last-child{
+    margin-right: 0;
+}
+header ul li a{
+    color: #cccccc;
+    font-size: 12px;
+    text-decoration: none;
+}
+header ul li a.logo{
+    font-size: 22px;
+}
+header ul li img.search{
+    width: 20px;
+}
+header ul li img.bag{
+    width: 20px;
+}
+
+div.name{
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    padding: 0 10%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+div.name h2{
+    font-size: 18px;
+}
+div.name ul{
+    display: flex;
+    list-style: none;
+}
+
+div.name ul li{
+    margin-right: 30px;
+}
+div.name ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;    
+}
+div.name ul li a.gray{
+    color: rgba(104, 104, 104, 0.8);
+}
+div.name ul li a.button{
+    padding: 5px 14px;
+    color: #fff;
+    border-radius: 35px;
+    background-color: rgb(9, 45, 248);
+}
+.spotlight .main{
+    display: flex;
+    justify-content: center;
+}
+.spotlight .main video{
+    margin: 0 auto;
+}
+.spotlight .text{
+    text-align: center;
+}
+.spotlight .text h5{
+    font-size: 26px;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+}
+.spotlight .text h1{
+    font-size: 80px;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+}
+.spotlight .text p{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+}
+.spotlight .text span{
+    color:#86868b;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 30px;
+}
+.spotlight .text a.button{
+    color:#86868b;
+    font-size: 24px;   
+    font-weight: bold; 
+    text-decoration: none;
+}
+@media all and (max-width:980px){
+    .spotlight .text h5{
+        font-size: 21px;
+    }
+    .spotlight .text h1{
+        font-size: 56px;
+        
+    }
+    .spotlight .text p{
+        font-size: 21px;
+    }
+    .spotlight .text span{
+        font-size: 17px;
+    }
+    .spotlight .text a.button{
+        font-size: 17px;
+    }
+    .spotlight .main video{
+        width: 150%;
+    }
+
+}
+@media all and (max-width:768px){
+    .spotlight .main video{
+        width: 70%;
+    }
+
+}
+@media all and (max-width:640px){
+    header ul li{
+        display: none;
+    }
+    header div.logo a img{
+        margin-right: 0;
+    }
+    .spotlight .text h5{
+        font-size: 18px;
+    }
+    .spotlight .text h1{
+        font-size: 52px;
+    }
+    .spotlight .text p{
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+}
+@media all and (max-width:480px){
+    div.name{
+        padding: 0 5%;
+    }
+    div.name h2{
+        font-size: 16px;
+    }
+    div.name ul li a{
+        font-size: 10px;
+    }
+    div.name ul li:last-child{
+        margin-right: 0;
+    }
+    .spotlight .main{
+        margin-top: 20%;
+    }
+    .spotlight .text{
+        margin-top: 30%;
+    }
+    .spotlight .text h5{
+        font-size: 16px;
+    }
+    .spotlight .text h1{
+        font-size: 45px;
+    }
+    .spotlight .text p{
+        font-size: 14px;
+        width: 90%;
+    }
+}
+@media all and (max-width:360px){
+    
+    div.name h2{
+        font-size: 12px;
+        margin: 3px 0;
+        
+    }
+    div.name{
+        flex-direction: column;
+    }
+    div.name div.right{
+        margin-bottom: 15px;
+    }
+    .spotlight .text h5{
+        font-size: 12px;
+    }
+    .spotlight .text h1{
+        font-size: 35px;
+    }
+    .spotlight .text p{
+        font-size: 10px;
+        width: 90%;
+    }
+    .spotlight .text span{
+        font-size: 14px;
+    }
+    .spotlight .text a.button{
+        font-size: 14px;
+    }
+}
